@@ -230,7 +230,7 @@ type tmplData struct {
 
 var tmpl = template.Must(template.New("dockerfile").Parse(`
 FROM {{ .Image }}
-RUN apk add git {{ .Install }}
+RUN apt-get install git {{ .Install }}
 
 COPY . /home/src
 WORKDIR /home/src
