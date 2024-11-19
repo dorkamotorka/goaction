@@ -29,7 +29,7 @@ var (
 	name    = flag.String("name", "", "Override action name, the default name is the package name.")
 	desc    = flag.String("desc", "", "Override action description, the default description is the package synopsis.")
 	image   = flag.String("image", "golang:1.14.2-alpine3.11", "Override Docker image to run the action with (See https://hub.docker.com/_/golang?tab=tags).")
-	install = flag.String("install", "", "Comma separated list of requirements to 'apk add'.")
+	install = flag.String("install", "", "Comma separated list of requirements to 'apt intall'.")
 	icon    = flag.String("icon", "", "Set branding icon. (See options at https://feathericons.com).")
 	color   = flag.String("color", "", "Set branding color. (white, yellow, blue, green, orange, red, purple or gray-dark).")
 
